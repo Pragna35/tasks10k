@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+</head>
+
+<body style="background-color: azure;">
+    <center>
+        <h1><u>Admission Form</u></h1>
+        <h2>Sri Sai Raghavendhra High School (CBSE)</h2>
+    </center>
+    <form action="" style="background-color: lightpink;">
+        <fieldset>
+            <legend><strong>Fill the Form</strong></legend>
+            <label for="Sur">
+                Surname:
+            </label>
+            <input type="text" id="sur">
+            <!--These for and id attributes are used to highlight the formfield when we click on text
+        for example , if click on surname it's input formfield  will be highlighted-->
+            <br><br>
+            <label for="name">
+                Name:
+            </label>
+            <input type="text" id="name">
+            <br><br>
+            <label for="fname">
+                Father's Name:
+            </label>
+            <input type="text" id="fname">
+            <br><br>
+            <label for="occ">
+                Occupation:
+            </label>
+            <input type="text" id="occ">
+            <br><br>
+            <label for="Mname">
+                Mother's Name:
+            </label>
+            <input type="text" id="Mname">
+            <br><br>
+            <label for="Ano.">
+                Aadhar Number:
+            </label>
+            <input type="text" maxlength="14" id="Ano.">
+            <br><br>
+            <label for="">
+                Mobile Number:
+            </label>
+            <input type="text" maxlength="10">
+            <br><br>
+            <label for="dob">
+                Date of Birth:
+            </label>
+            <input type="date" id="dob">
+            <br><br>
+            <label for="mole">
+                Mole:
+            </label>
+            <input type="text" id="mole">
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio" name="title" id="m" value="male">
+            <label for="m">male</label>
+
+            <input type="radio" name="title" id="f" value="female">
+            <label for="f">Female</label>
+            <br><br>
+            <label for="add">Address:</label>
+            <textarea name="a" id="add" placeholder="Enter your address"></textarea>
+            <br><br>
+            <label for="mail">
+                Email Address:
+            </label>
+            <input type="email" id="mail">
+            <br><br>
+            <label for="sign">
+                Signature:
+            </label>
+            <input type="file" id="sign">
+            <br><br>
+            <label for="img">Upload Image:</label>
+            <input type="image" id="img">
+            <input type="file">
+            <br><br>
+            <label for="per">Previous Class Percentage:</label>
+            <input type="range" id="per">
+            <br><br>
+            <center>
+                <input type="submit" value="Submit Form">
+                <!--We can also use button tag to submit
+            for example: <button>Submit</button>.-->
+                <!--both will work as same-->
+
+
+                <input type="reset" value="Reset Form">
+                <!--We can also use button tag to Reset
+            for example: <button>Reset</button>.-->
+                <!--both will work as same-->
+
+            </center>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

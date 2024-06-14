@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+
+<body>
+    <form style="background-color:azure;">
+        <fieldset>
+            <legend><b>Register here</b></legend>
+            <center>
+                <h1><u>Registration Form </u></h1>
+                <hr>
+                <label for="fname">FirstName : </label>
+                <input type="text" id="fname">
+                <br><br>
+
+                <label for="lname">LastName : </label>
+                <input type="text" id="lname">
+                <br><br>
+                <label for="add">Address : </label>
+                <textarea name="address" id="add" placeholder="Enter your address"></textarea>
+
+                <br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email">
+                <br><br>
+                <label>Gender:</label>
+                <input type="radio" name="title" value="s" id="m">
+                <label for="m">Male</label>
+                <input type="radio" name="title" value="s" id="f">
+                <label for="f">Female</label>
+                <input type="radio" name="title" value="s" id="o">
+                <label for="o">Others</label>
+                <!--This name and value attributes values will display in the UrL when we submit the form.
+                    So,it should be related-->
+
+                <br><br>
+                <label for="num">Mobile: </label>
+                <input type="tel" id="num" placeholder="+91 xxxxxxxxxx">
+                <br><br>
+                <label>Marital Status:</label>
+                <input type="radio" name="tit" value="yes">
+                <label>Married</label>
+                <input type="radio" name="tit" value="no">
+                <label>Single</label>
+
+                <br><br>
+                <label for="date">Date-of-Birth : </label>
+                <input type="date" id="date">
+                <!--input type="button" value="submit"-->
+                <br><br>
+                <label>State:</label>
+                <select>
+                    <option value="">Andhra Pradesh</option>
+                    <option value="">Telangana</option>
+                    <option value="">Kerala</option>
+                </select>
+                <br><br>
+                <label>Country:</label>
+                <select>
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">UK</option>
+                </select>
+                <br><br>
+                <input type="submit">
+                <input type="reset">
+
+
+
+            </center>
+        </fieldset>
+    </form>
+</body>
+
+</html>

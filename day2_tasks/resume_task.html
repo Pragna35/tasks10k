@@ -2,22 +2,46 @@
 
 <head>
     <title>resume_task</title>
+    <link rel="stylesheet" href="../day8/resume_style.css">
+    <style>
+        #button-style {
+            float: right;
+            background-color: blue;
+            color: white;
+        }
+
+        .table-heading {
+            background-color: burlywood;
+            font-size: 20px;
+
+        }
+
+        .div-tag {
+            font-size: 1.17em;
+            font-weight: bold;
+
+        }
+
+        #photo {
+            width: 150px;
+            height: 150px;
+            border: 3px solid midnightblue;
+        }
+
+        #sign-img {
+            border: 3px solid midnightblue;
+            width: 85px;
+            height: 25px;
+
+
+        }
+    </style>
 </head>
-<style>
-    table,
-    td,
-    th {
-        border: 2px solid black;
-        border-collapse: collapse;
-        font-size: 18px;
-        padding: 8px;
 
-    }
-</style>
 
-<body>
+<body style="background-color: honeydew;">
 
-    <img src="./pragna_img.jpg" alt="my image" align="right" width="150px" height="150px" border="2px solid black">
+    <img src="./pragna_img.jpg" alt="my image" align='right' id="photo">
     <pre>
 
 
@@ -30,28 +54,32 @@
 
 
 
-        <a href="./pragna_img.jpg" download="my image" ><button style="float: right;">download</button></a></pre>
+        <a href="./pragna_img.jpg" download="my image" ><button id="button-style">download</button></a></pre>
 
 
 
     <h1>Name:Pragna Murkiker</h1>
 
-    <h3><b>email:</b>pragnagirish11@gmail.com,<br><b>Address:</b>9-6-36,<br>Burudugally,Gajulpet,<br>Nizamabad,<br>PinCode:503001.
-    </h3> <br>
+    <div class="div-tag" style="color: blueviolet;">email:pragnagirish11@gmail.com,</div>
+    <div class="div-tag">Address:9-6-36,<br>
+        Burudugally,Gajulpet,<br>
+        Nizamabad,<br>
+        PinCode:503001.
+    </div><br>
     <hr>
-    <h2 style="background-color: cadetblue;">Career Objective:</h2>
+    <h2>Career Objective:</h2>
     <p style="font-size: 18px;">Seeking a position in a dynamic organization where I can launch my career and work
         towards building a strong
         skill set.</p>
 
-    <h2 style="background-color: cadetblue;"> Educational Details:</h2>
+    <h2> Educational Details:</h2>
 
     <table>
         <tr>
-            <th>course</th>
-            <th>Board/University</th>
-            <th>Institute</th>
-            <th>Year of passing</th>
+            <th class="table-heading">course</th>
+            <th class="table-heading">Board/University</th>
+            <th class="table-heading">Institute</th>
+            <th class="table-heading">Year of passing</th>
 
         </tr>
         <tr>
@@ -68,27 +96,34 @@
         </tr>
     </table>
 
-    <h2 style="background-color: cadetblue;">Technical Skills:</h2>
+    <h2>Technical Skills:</h2>
     <ul>
         <li>HAve a basic knowledge of HTML,CSS, SQL and Flutter </li>
         <li>Typing with 30wpm</li>
     </ul>
 
 
-    <h2 style="background-color: cadetblue;">Hobbies:</h2>
+    <h2>Hobbies:</h2>
     <ul>
         <li>plying with cat</li>
         <li>listening to music</li>
     </ul>
 
-    <h2 style="background-color: cadetblue;">Declaration:</h2>
+    <h2>Declaration:</h2>
     <p style="font-size: 18px;">I hearby declare that the above informattion and particulars are true to the best of my
         personal knowledge.</p>
 
     <h2>Signature:</h2>
-    <span><img src="./signature.jpg" alt="sign" width="85px" height="25px"></span>
-    <a href="./signature.jpg" download="signature"><button style="margin-left: 95px;"><img src="./download_icon.jpg"
-                alt="download_icon" width="25px" height="15px"></button></a>
+    <span>
+        <img src="./signature.jpg" alt="sign" id="sign-img">
+    </span>
+
+    <button style="margin-left: 95px;">
+        <a href="./signature.jpg" download="signature"> <img src="./download_icon.jpg" alt="download_icon" width="32px"
+                height="15px"></a>
+
+    </button>
+
 
 
 </body>

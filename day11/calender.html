@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender using pseudo class selectors</title>
+    <style>
+        .day {
+            padding: 30px;
+        }
+
+        td {
+            width: 40px;
+            height: 40px;
+            background-color: azure;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        #july {
+            background-color: lavenderblush;
+            box-shadow: 10px 10px 35px black;
+            padding: 25px;
+
+        }
+
+        table {
+            border: solid;
+        }
+
+        td:first-child {
+            background-color: lightpink;
+        }
+
+        .hldy:hover {
+            background-color: gold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+
+            <th colspan="7" id="july">
+                July-2024
+            </th>
+
+        </tr>
+
+        <tr>
+            <th class="day">Sun</th>
+            <th class="day">Mon</th>
+            <th class="day">Tue</th>
+            <th class="day">Wed</th>
+            <th class="day">Thu</th>
+            <th class="day">Fri</th>
+            <th class="day">Sat</th>
+        </tr>
+
+        <tr>
+            <td style="visibility: hidden;"></td>
+            <td class="hldy">1</td>
+            <td>2</td>
+            <td class="hldy">3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td class="hldy">11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td class="hldy">17</td>
+            <td>18</td>
+            <td>19</td>
+            <td class="hldy"> 20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td class="hldy">23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td class="hldy"> 27</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td class="hldy"> 29</td>
+            <td>30</td>
+            <td>31</td>
+
+        </tr>
+    </table>
+    <h3>Note: To see the holidays mouse hover on dates</h3>
+</body>
+
+</html>

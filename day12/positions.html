@@ -27,26 +27,26 @@
         }
 
         #topbar {
-            width: 100%;
+             width: 1480px; 
             background-color: white;
-            padding: 24px;
+            padding: 18px;
             border-bottom: 2px solid black;
-            position: fixed;
-            top: 0;
-            left: 0;
-            /* z-index: 1; */
+             position: fixed;
+             top: 0;
+            z-index: 1;
+        }
+        #m-items{
+            display: inline;
+            word-spacing: 24px;
+            position: relative;
+            left: 55%;
         }
 
         .menu-item {
-            padding: 10px;
-            margin-right: 50px;
-            font-weight: bold;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 24px;
-            letter-spacing: 3px;
-            position: relative;
-            top: 0;
-            left: 55%;
+font-size: 24px;
+letter-spacing: 2px;
+
+            
         }
         .menu-item:hover{
             background-color: darkgrey;
@@ -54,30 +54,14 @@
         }
 
         #image {
-            width: 98%;
-            height: 100%;
-            margin-left: 20px;
-            margin-right: 20px;
-            margin-bottom: 50px;
+            width: 1480px;
+            height: 600px;
+            
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
-        #top_text {
-            font-size: 50px;
-            font-weight: bold;
-            color: black;
-            position: absolute;
-            top: 50%;
-            left: 40%;
-
-        }
-
-        #trans {
-            background-color: rgba(33, 30, 30, 0.619);
-            padding: 10px 10px;
-            position: relative;
-            right: 10px;
-            color: white;
-        }
+        
 
         #proj {
             font-size: 38px;
@@ -85,10 +69,31 @@
             margin: 20px 30px;
 
         }
-
-        hr {
+        #top_text{
+         width: 230px;
+          position: relative;
+          top: 300px;
+          left: 40%;
+          
+        }
+        #trans{
+            color: white;
+            background-color: rgba(37, 36, 36, 0.841);
+padding: 12px 5px 12px 15px;
+font-size: 36px;
+margin-right: 5px;
+letter-spacing: 5px;
+text-align: center;
+        }
+        #text{
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        hr{
             margin: 0 30px;
         }
+
+        
 
         .home_div {
             margin: 50px 30px 20px 30px;
@@ -99,11 +104,14 @@
 
         .b2 {
             display: inline-block;
-            margin-right: 40px;
-            width: 410px;
+            margin-right: 28px;
+            width: 320px;
             height: 300px;
             border: solid;
             position: relative;
+            z-index: -1;
+
+            
         }
 
         .house {
@@ -112,37 +120,44 @@
         }
 
         .home_tag {
-            /* display: inline; */
+            
             width: 160px;
             font-size: 25px;
             padding: 12px;
-            /* height: 100px; */
+             
             color: white;
             background-color: rgba(22, 20, 20, 0.836);
             position: absolute;
             top: 0;
             left: 0;
+            
         }
     </style>
 </head>
 
 <body>
     <div id="topbar">
+       
         <span id="br"> BR</span>
         <span id="architect">Architects</span>
+    
+        <div id="m-items">
         <span class="menu-item">Projects</span>
         <span class="menu-item">About</span>
         <span class="menu-item">Contact</span>
     </div>
-    <div id="top_text">
-        <span id="trans"> BR </span>Architects
     </div>
+    <div id="top_text">
+        <span id="trans"> BR </span><span id="text">Architects</span>
+    </div>
+    <div>
     <img id="image"
         src="https://media.istockphoto.com/id/1328633577/photo/low-angle-view-of-futuristic-modern-architecture-skyscraper-of-corporate-office-building.jpg?s=612x612&w=0&k=20&c=1zcdWMVuv6HXPkh32hPpRLtInzbz9cKNOCK8TAaGadY="
         alt="br architect">
+    </div>
     <p id="proj">Projects </p>
     <hr>
-    <div class="home_div">
+     <div class="home_div">
         <div class="b2">
             <img class="house"
                 src="https://www.gardenaffairs.co.uk/uploads/buildings/summerhouses/chelsea/chelsea-summerhouse-wraysbury04.jpg"
@@ -192,8 +207,8 @@
             <span class="home_tag">Village House</span>
         </div>
     </div>
-
+ 
 
 </body>
 
-</html>
+</html> 

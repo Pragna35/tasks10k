@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +20,7 @@
             height: 110px;
         }
 
-        .white {
+          .white {
             background-color: azure;
         }
 
@@ -34,7 +34,8 @@
 
         .black:hover {
             background-color: darkseagreen;
-        }
+        } 
+         
 
         h1 {
             width: 100%;
@@ -57,7 +58,7 @@
 <body>
     <h1>Chess-Board</h1>
     <table>
-        <tr>
+        <tr >
             <td class="white"></td>
             <td class="black"></td>
             <td class="white"></td>
@@ -141,4 +142,139 @@
     </table>
 </body>
 
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess using nth-child()</title>
+    <style>
+        table {
+            
+            border: 3PX solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+        td {
+
+width: 100px;
+height: 110px;
+
+}
+td:nth-child(even){
+    background-color: darkorange;
+}
+td:nth-child(even):hover{
+    background-color: orangered;
+}
+td:nth-child(odd){
+    background-color: lavenderblush;
+}
+td:nth-child(odd):hover{
+    background-color: darkolivegreen;
+}
+.even-row:nth-child(even){
+    background-color: lavenderblush;
+}
+.even-row:nth-child(even):hover{
+    background-color: darkolivegreen;
+}
+.even-row:nth-child(odd){
+    background-color: darkorange;
+}
+.even-row:nth-child(odd):hover{
+    background-color: orangered;
+}
+
+    </style>
+</head>
+<body>
+    <table >
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+    <td class="even-row"></td>
+</tr>
+    </table>
+</body>
 </html>

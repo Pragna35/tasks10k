@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task using Transform property</title>
+    <style>
+       
+        h1{
+            /* border: solid; */
+            /* width: 500px; */
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 0px 4px 8px rgb(185, 185, 246);
+        }
+        .box{
+            width: 250px;
+            height: 300px;
+            display: inline-block;
+            margin:50px 70px 50px 50px;
+            /* transition: 2s; */
+            background-color: rgb(227, 251, 251);
+            box-shadow: 0px 0px 8px 3px rgb(0, 66, 107);
+        }
+        .text{
+            display:block;          
+            font-size: 30px;
+            text-align: center;
+            position: relative;
+            top: 35%;
+        }
+        
+        .box1{
+            background-color: lavenderblush;
+            box-shadow: 0px 0px 8px 3px rgb(80, 0, 63);
+           
+        }
+        .box2{
+            background-color: rgb(255, 238, 169);
+            box-shadow: 0px 0px 8px 3px rgb(101, 38, 3);
+        }
+        .box3{
+            background-color:lavender;
+            box-shadow: 0px 0px 8px 3px rgb(64, 1, 98);
+        }
+        #xy:hover{
+transform:translate(10px,20px);
+        }
+        #x:hover{
+           transform: translateX(30px); 
+        }
+        #y:hover{
+            transform: translateY(35px);
+        }
+        #z:hover{
+            transform: translate(0,-35px);
+        }
+        #scale:hover{
+            transform: scale(1.2,1.3);
+        }
+        #s-x:hover{
+            transform: scaleX(1.3);
+        }
+        #s-y:hover{
+            transform: scaleY(1.2);
+        }
+        #s-xy:hover{
+            transform: scale(1.3);
+        }
+        #rotate:hover{
+            transform: rotate(90deg);
+        }
+        #r-x:hover{
+            transform: rotateX(180deg);
+            /* transition: 3s; */
+        }
+        #r-y:hover{
+            transform: rotateY(90deg);
+            /* transition: 5s; */
+        }
+        #r-xy:hover{
+            transform: rotateX(130deg) rotateY(350deg) ;
+            /* transition: 4s; */
+        }
+        #skew:hover{
+            /* We can also give -ve values also */
+            transform: skew(10deg,20deg);
+            /* transition: 1s; */
+        }
+        #sk-x:hover{
+            transform: skewX(-30deg);
+            /* transition: 1s; */
+        }
+        #sk-y:hover{
+            transform: skewY(30deg);
+            /* transition: 1s; */
+        }
+        #sk-xy:hover{
+            transform: skewX(-40deg) skewY(30deg);
+            /* transition: 1s; */
+        }
+        #shorthand:hover{
+            transform: translate(-40px,-90px) scale(1.2) rotateX(80deg) rotateY(30deg)  ;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 >Transform Property</h1>
+    <hr>
+    <h2>1.Transform:translate(x-axis,Y-axis):</h2>
+    <hr>
+    <div class="box" id="xy"><span class="text">translate(X,Y)</span></div>
+    <div class="box" id="x"><span class="text">translateX(px)</span></div>
+    <div class="box" id="y"><span class="text">translateY(px)</span></div>
+    <div class="box" id="z"><span class="text">translate(0,-px)</span></div>
+    <hr>
+    <h2>2.Transform:Scale(X-axis,Y-axis):</h2>
+    <hr>
+    <div class="box box1" id="scale"><span class="text">scale(X-axis,Y-axis)</span></div>
+    <div class="box box1" id="s-x"><span class="text">scaleX(width)</span></div>
+    <div class="box box1" id="s-y"><span class="text">scaleY(height)</span></div>
+    <div class="box box1"id="s-xy"><span class="text">Scale(1.5-for X&Y)</span></div>
+    <hr>
+    <h2>3.Transform:rotate(deg) OR rotateX(deg) rotateY(deg):</h2>
+    <hr>
+    <div class="box box2" id="rotate"><span class="text">rotate(angle)</span></div>
+    <div class="box box2" id="r-x"><span class="text">rotateX(angle)</span></div>
+    <div class="box box2"id="r-y"><span class="text">rotateY(angle)</span></div>
+    <div class="box box2" id="r-xy"><span class="text">rotateX() rotateY()</span></div>
+    <hr>
+    <h2>4.Tansform:skew(X-axis,y-axis):</h2>
+    <hr>
+    <div class="box box3" id="skew"><span class="text">skew(X-axix,Y-axis)</span></div>
+    <div class="box box3" id="sk-x"><span class="text">skewX(angle)</span></div>
+    <div class="box box3" id="sk-y"><span class="text">skewY(angle)</span></div>
+    <div class="box box3" id="sk-xy"><span class="text">skew(angle)</span></div>
+    <hr>
+    <h2>Transform:translate(px,px) rotate(angle) scale(value):</h2>
+    <hr>
+    <div class="box" id="shorthand"></div>
+
+</body>
+</html>

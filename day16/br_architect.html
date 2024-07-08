@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using background image property BR-Architect template of w3.css</title>
+    <style>
+        body{
+            margin: 0; 
+        }
+        #top-bar{
+            width: 100%;
+            padding: 20px; 
+            margin-top: 0;      
+            /* border-bottom: 2px solid black; */
+            /* while applying box-shadow,don't use border for better result  */
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            word-spacing: 1%;
+            background-color: white;
+            box-shadow: 0px 0px 6px 2px rgb(38, 36, 36) ;
+             position: fixed;
+             top: 0;  
+             z-index: 1;     
+        }
+        #menu-item{
+           display: inline-block;
+           position: relative;
+           left: 65%;          
+        }
+        
+        .item{
+            margin-right: 30px;  
+            padding: 10px;     
+        }
+        .decoration{
+            text-decoration: none;
+            color: black;
+        }
+        .item:hover{
+            background-color: rgba(62, 57, 57, 0.56);
+        }
+   .bg-img{
+    width: 98%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 60px; */  
+    /* background-color: rgb(208, 221, 221); */
+    background-image: url('https://www.w3schools.com/w3images/architect.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#br{
+    font-size: 40px;
+    padding: 10px;
+    color: rgb(223, 211, 211);
+    background-color: rgba(18, 18, 19, 0.586);
+    position:absolute;
+    top: 40%;
+    left: 45%;
+
+}
+.mar-gin{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#img1{
+   margin-left: 2%;
+   /* margin-right: 5%; */
+  
+}
+.house{
+    border: solid black;
+    width: 24%;
+    height: 35vh; 
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.house:hover{
+    transform: scale(0.9);
+   
+}
+.img-text{
+    color: white;
+    padding: 5px;
+    background-color: black;
+}
+#summer{
+    background-image: url('https://www.gardenaffairs.co.uk/uploads/buildings/summerhouses/chelsea/chelsea-summerhouse-wraysbury04.jpg');
+}
+#winter{
+  
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/keep-the-home-fires-burning-for-the-weary-winter-traveler-elaine-plesser.jpg');
+}
+#autumn{
+    
+    background-image: url('https://i.pinimg.com/736x/58/89/2a/58892afafd2bc00ce09b7567073db890.jpg');
+}
+#barn{
+    background-image: url('https://www.ableroof.com/wp-content/uploads/2017/06/verylarge-windows-barn.jpg');
+}
+#snow{
+   
+    background-image: url('https://png.pngtree.com/background/20230317/original/pngtree-snow-house-night-background-picture-image_2149261.jpg');
+}
+#spring{
+  
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeR47DxsoaHODVjsDWP5pZajJ1AWfAPRMkSVJKzxlIFoWn42M-gFV5RYjz6x3-Me7IKl-GsSTPqAF6Rc0PDppSaPQAGYiWNT_lUVG3jhO1kndmvaJSWYlcdadUM6lJce0aHjG9qXPw6yM/s1600/P4205364.JPG');
+}
+#rainy{
+   
+    background-image: url('https://t3.ftcdn.net/jpg/07/52/81/40/360_F_752814051_NTzLtvCNuAlAIdPwj3pg7E2mlkNbHuW3.jpg');
+}
+#renovated{
+background-image: url('https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202211/home-renovation-ideas/title-exterior-house-renovation.jpg');
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#images-wrapper{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#img-div{ 
+    display: inline-block;  
+    /* border: solid; */
+    width: 24%;
+    margin-right: 10px;
+}
+.image{
+    width: 100%;
+    transition: 1s;
+}
+.image:hover{
+transform: scale(1.1);
+}
+
+.name{
+    margin-left: 0;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.role{
+    margin-left: 0;
+    color: lightslategray;
+}
+.info{
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+}
+.btn{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+}
+.btn:hover{
+background-color: rgba(124, 123, 123, 0.573);
+}
+input{
+    padding: 10px;
+    margin-left: 30px;
+    font-size:15px ;
+    margin-bottom: 15px;   
+}
+#send-btn{
+    width: 300px;
+    font-weight:600 ;
+    display: block;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 15px;
+    color: white;
+    background-color:black;
+}
+#send-btn:hover{
+    color: black;
+background-color:  rgba(112, 111, 111, 0.538);
+}
+#map{
+    
+    margin-top: 50px;
+    margin-left: 30px; 
+   /* margin-right: 30px; */
+}
+footer{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+    </style>
+
+    
+</head>
+<body>
+    <div id="top-bar">
+        <span>BR</span>
+        <span>Architects</span>
+        <div id="menu-item">
+        <span class="item"><a href="#profile" class="decoration">Profile</a></span>
+        <span class="item"><a href="#about" class="decoration">About</a></span>
+        <span class="item"><a href="#contact" class="decoration">Contact</a></span>
+    </div>
+    </div>
+    <div class="bg-img"> <h1 id="br">BR Architect</h1></div>
+    <h2 class="mar-gin" id="profile">Profile</h2>
+    <hr class="mar-gin">
+    <div id="img1">
+        <h3 class="house" id="summer"><span class="img-text">Summer  House</span></h3>
+        <h3 class="house" id="winter"><span class="img-text">Winter House</span></h3>
+        <h3 class="house" id="autumn"><span class="img-text">Autumn House</span> </h3>
+        <h3 class="house" id="barn"><span class="img-text">Barn House</span></h3>
+    </div>
+    <div id="img1">
+        <h3 class="house" id="snow"><span class="img-text">Snow House</span></h3>
+        <h3 class="house" id="spring"><span class="img-text">Spring House</span></h3>
+        <h3 class="house" id="rainy"><span class="img-text">Rainy House </span></h3>
+        <h3 class="house" id="renovated"><span class="img-text">Renovated</span></h3>
+    </div>
+    <h2 class="mar-gin" id="about">About</h2>
+    <hr class="mar-gin">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, exercitationem earum! Modi placeat aliquid dolorum alias? Beatae cupiditate recusandae, tempore sequi aperiam itaque facere. Natus eveniet mollitia ipsa atque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut id, corrupti pariatur iste ea? Laborum dolores odit modi amet, magnam, iusto aperiam quis ratione temporibus debitis eos accusantium fugit.
+    </p>
+    <div id="images-wrapper">
+    <div id="img-div">
+        <img class="image" src="https://www.w3schools.com/w3images/team2.jpg" alt="john" >
+        <p class="name">John Doe</p>
+        <p class="role">CEO & Founder</p>
+        <p class="info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button class="btn">Contact</button>
+    </div>
+    <div id="img-div">
+        <img class="image" src="https://www.w3schools.com/w3images/team1.jpg" alt="jane" >
+        <p class="name">Jane Doe</p>
+        <p class="role">Architect</p>
+        <p class="info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button class="btn">Contact</button>
+    </div>
+    <div id="img-div">
+        <img class="image" src="https://www.w3schools.com/w3images/team3.jpg" alt="mike ross" >
+        <p class="name">Mike Ross</p>
+        <p class="role">Architect</p>
+        <p class="info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button class="btn">Contact</button>
+    </div>
+    <div id="img-div">
+        <img class="image" src="https://www.w3schools.com/w3images/team4.jpg" alt="dan ross" >
+        <p class="name">Dan Star</p>
+        <p class="role">Architect</p>
+        <p class="info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button class="btn">Contact</button>
+    </div>
+</div>
+<h2 class="mar-gin" id="contact">Contact</h2>
+<hr class="mar-gin">
+<p>Lets get in touch and talk about your next project.</p>
+<form action="">
+    <input type="text"  placeholder="Name" size="150px">
+    <input type="email"  placeholder="Email" size="150px">
+    <input type="text"  placeholder="Subject" size="150px">
+    <input type="text"  placeholder="Comment" size="150px">
+    <button id="send-btn">SEND MESSAGE</button>
+</form>
+<div id="map">
+<img  src="https://www.w3schools.com/w3images/map.jpg" alt="map" >
+</div>
+<footer>Powered by <a style="color: white;" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></footer>
+</body>
+</html>

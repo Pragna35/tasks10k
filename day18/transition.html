@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+    <style>
+       
+        img{
+            width: 200px;
+            height: 200px;
+            /* border: solid; */
+            box-shadow: 0px 0px 8px 4px rgb(0, 0, 0);
+        }
+        h1:hover~img{   
+            transform: translate(100px 100px);
+            transition: 1s; 
+            width: 500px;
+            height: 500px;  
+        }
+        h2:hover~img{
+            transform: scale(0.5);
+            transition: 2s;
+        }
+        h3:hover~img{
+            transform: rotateX(180deg) rotateY(180deg);
+            transition: 2s;
+        }
+        h4:hover~img{
+            transform: skewX(145deg) ;
+            transition-duration: 2s;
+        }
+
+    </style>
+</head>
+<body>
+    Hover on these headings:
+    <h1 style="background-color: bisque;width: 200px;">
+        translate
+    </h1>
+    <h2 style="background-color: bisque;width: 200px;font-size: 32px;">Scale</h2>
+    <h3 style="background-color: bisque;width: 200px;font-size: 32px;" >Rotate</h3>
+    <h4 style="background-color: bisque;width: 200px;font-size: 32px;">Skew</h4>
+
+    <img src="../day1_tasks/cats1.jpg" alt="cat">
+</body>
+</html>

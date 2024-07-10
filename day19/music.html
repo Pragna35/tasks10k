@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music graph</title>
+    <style>
+        body{
+          
+            margin-left: 100px;
+            /* background:linear-gradient(to right,rgb(211, 191, 221),rgb(145, 82, 145)); */
+            background-image: url('https://img.pikbest.com/back_our/20210327/bg/517ee17e23581.png!sw800');
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+        }
+        img{
+           
+            height: 200px;
+            width: 200px;
+            box-shadow: 0px 0px 12px 9px rgb(46, 2, 57);
+            border-radius: 50%;
+            margin-left: 30px;
+            margin-top: 50px;
+           padding: 10px 5px 0px;
+           animation: rotation 5s infinite linear 0.5s ;
+           
+        }
+        .glass{
+            width: 350px;
+           text-align: center;
+           margin-top: 40px;
+           /* From https://css.glass */
+background: rgba(255, 255, 255, 0.10);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(2.5px);
+border: 1px solid rgba(255, 255, 255, 1);
+            /* border: solid; */
+        }
+        audio{
+          margin-top: 10px;
+        }
+      
+        .music-bars{
+            width: 30%;
+            height: 40vh;
+            margin-left: 45px;
+            /* border: solid; */
+          
+            /* background-image: url('https://www.pngall.com/wp-content/uploads/4/DJ-PNG-Free-Download.png');
+            background-size: cover;
+            background-repeat: no-repeat; */
+            /* background: linear-gradient(to right,rgb(190, 215, 190),rgb(184, 184, 80)); */
+            position: relative;
+            padding: 10px;
+        }
+        .bar{
+            width: 18px;
+            height: 40px;
+            background: linear-gradient(to top,rgb(222, 88, 164),rgb(77, 77, 167));
+            position: absolute;
+            bottom: 0;
+            animation: track 1.3s linear infinite;
+            box-shadow: 2px 2px 3px black;
+        }
+        .bar:nth-child(1){ 
+            left: 20px;          
+            margin: 0 15px;
+            animation-delay: 1s;
+        }
+        .bar:nth-child(2){
+            left:35px ;
+            margin: 0 25px;
+            animation-delay: 0.5s;
+        }
+        .bar:nth-child(3){
+            left: 50px;
+            margin: 0 35px;
+        }
+        .bar:nth-child(4){
+            left:65px ;
+            margin: 0 45px;
+            animation-delay: 0.9s;
+        }
+        .bar:nth-child(5){
+            left: 80px;
+            margin: 0 55px;
+            animation-delay:1.2s ;
+        }
+        .bar:nth-child(6){
+            left: 95px;
+            margin: 0 65px;
+            animation-delay:0.6s ;
+        }
+        .bar:nth-child(7){
+            left: 110px;
+            margin: 0 75px;
+            animation-delay:0.9s ;
+        }
+        .bar:nth-child(8){
+            left: 125px;
+            margin: 0 85px;
+            animation-delay:0.3s ;
+        }
+        .bar:nth-child(9){
+            left:140px;
+            margin: 0 95px;
+            animation-delay: 0.8s;
+        }
+        @keyframes track{
+            0%,100%{
+                height: 50px;
+            }
+            25%{
+                height: 100px;
+            }
+            50%{
+                height: 150px;
+            }
+            75%{
+                height:200px ;
+            }
+        }
+        @keyframes rotation{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(359deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass">
+     <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-movie_829419480/portrait/1920x7701685050621.jpg" alt="movie frame">
+    <div class="music-bars">      
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+    </div>
+    <audio controls autoplay muted>
+        <source src="../day4_tasks/Mental Madhilo.mp3">
+    </audio>
+</div>
+</body>
+</html>

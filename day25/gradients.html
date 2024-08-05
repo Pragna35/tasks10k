@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks on gradient,attribute selectors </title>
+    <style>
+        fieldset{
+            /* in conic-gradient, we have to give starting position and ending position. */
+            /* It is mostly used to create pie charts */
+            /* background:conic-gradient(color1 starting point,color1 ending point,color2 starting point,color2 ending point,......) */
+            background: conic-gradient(lightpink,orange);
+            /* background:conic-gradient(orange 0deg,orange 80deg,skyblue 100deg,skyblue 190deg,lightpink 200deg,lightpink 270deg,lavender 280deg,lavender 360deg); */
+
+        }
+        input{
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0px;
+            font-size: 16px;
+            border-radius: 15px;
+            
+        }
+        /* Attribute selector by [attrbute name]*/
+        [title]{
+            color: darkslateblue;
+        }
+        /* attribute selector bt [attribute name=value] */
+        [type=text]:hover{
+          background:linear-gradient(to right,lavender,lavenderblush)  ;
+        }
+        /* we should use this tilda symbol(~), if we have space b/w classs or we have two or more classes */
+        [class~=btn]{
+            padding: 10px;
+            width: 200px;
+            margin: 10px 45px;
+            font-size: 16px;
+            border-radius: 15px;          
+        }
+        /* [class name or attribute name~=classname or value] */
+        [class~=btn-clr]{
+            background: radial-gradient(circle, lightyellow,lightpink);
+        }
+        /* we should use first letter or first word of the attribute value to apply styles(for password "p") */
+        [type^="p"]{
+            background:linear-gradient(lightpink,lightblue);
+        }
+        [type^="te"]{
+            background-color: beige;
+        }
+        /* we should use last letter or last word of the attribute value to apply styles(for password "p") */
+        [type$="mail"]{
+            background-color: lavender;
+        }
+        [type$="ber"]{
+            background:linear-gradient(to right,skyblue,coral);
+        }
+        /* [attribute name|=value] */
+        /* it is used when we have hyphen in the value(field-set) */
+        [id|=field]{
+            font-size: 18px;
+            font-weight: 600;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend id="field-set">Sign in form</legend>
+    <form action="">
+        <h1 title="login here" >Sign up</h1>
+        <input type="text" placeholder=" Enter your Username"><br>
+        <input type="password" placeholder=" Enter Your Password"><br>
+        <input type="password" placeholder="Confirm password"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="number" placeholder="+91 xxxxxxxxxx"><br>
+        <button class="btn btn-clr">Signup</button>
+    </form>
+</fieldset>
+</body>
+</html>

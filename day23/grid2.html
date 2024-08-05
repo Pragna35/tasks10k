@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        .container{
+            /* border: solid; */
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: repeat(3,200px);
+            gap: 10px;
+        }
+        .container div{
+            border: solid;
+            
+        }
+        .item1{
+            grid-row: 1/4;
+            background-color: blue;
+
+        }
+        .item2{
+            grid-column: 2/4;
+            background-color: green;
+        }
+        .item4{
+            grid-row: 2/3;
+            /* grid-column: 2/3; */
+            background-color: yellow;
+        }
+        .item5{
+            grid-row:2/3 ;
+            background-color: blueviolet;
+        }
+        .item6{
+            grid-row: 2/4;
+            /* grid-column: 4/5; */
+            background-color: coral;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3" style="background-color: aqua;">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7" style="background-color: brown;">7</div>
+        <div class="item8" style="background-color: darkkhaki;">8</div>
+    </div>
+</body>
+</html>

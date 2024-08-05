@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task on  grid area properties --- 15-7-24</title>
+    <style>
+        .container{
+            /* border: solid; */
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            gap: 20px;
+            justify-content: center;
+            grid-template-areas: 
+            "head head head"
+            "nav nav nav"
+            "sec sec aside"
+            "art art aside"
+            "foot foot foot";
+
+            
+
+        }
+        .container div{
+            /* border: solid; */
+            box-shadow: 0px 0px 5px 3px black;
+        }
+        .item1{
+            grid-area:head ;
+           background-color:orangered
+        }
+        .item2{
+            grid-area: nav;
+            background-color: deepskyblue;
+        }
+        .item3{
+            grid-area: sec;
+            background-color: goldenrod;
+        }
+        .item4{
+            grid-area: art;
+            background-color: palevioletred;
+        }
+        .item5{
+            grid-area: aside;
+            background-color: darkolivegreen;
+        }
+        .item6{
+            grid-area: foot;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Header</div>
+        <div class="item2">Nav Bar</div>
+        <div class="item3">Section</div>
+        <div class="item4">Article</div>
+        <div class="item5">Aside</div>
+        <div class="item6">Footer</div>
+    </div>
+</body>
+</html>

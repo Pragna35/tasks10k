@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout1</title>
+    <style>
+        .parent{
+            /* border: solid; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+        }
+        .parent div{
+            border: solid;
+
+        }
+        .child3{
+            grid-area: 2/2/4/4;
+        }
+        .parent1{
+            display: grid;
+            grid-template-columns: repeat(4,250px);
+            grid-template-rows: repeat(4,250px);
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            /* background-color: lightblue; */
+           
+        }
+        .parent1 div{
+            border: solid;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .box5{           
+            /* grid-column: 2/4;
+            grid-row: 2/4; */
+            grid-area: 2/2/4/4;
+            /* background-image: url('https://cdn.img.gen.in/assets/Business/5806/Feeds/4653/5806_637348928825650620.jpg?rendered=true');
+            background-size: cover;
+            background-repeat:no-repeat ; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1" style="background-color: cornflowerblue;">1</div>
+        <div class="child2" style="background-color: chartreuse;">2</div>
+        <div class="child3" style="background-color: darkcyan;">3</div>
+        <div class="child4" style="background-color: darkorchid;">4</div>
+        <div class="child5" style="background-color: darkkhaki;">5</div>
+        <div class="child6" style="background-color: deepskyblue;">6</div>
+    </div>
+    <hr>
+    <div class="parent1">
+        <div class="box1" style="background-color: crimson;">1</div>
+        <div class="box2" style="background-color: darkkhaki;">2</div>
+        <div class="box3" style="background-color: darkolivegreen;">3</div>
+        <div class="box4" style="background-color: darksalmon;">4</div>
+        <div class="box5" style="background-color:darkslateblue " >5</div>
+        <div class="box6" style="background-color:hotpink ;">6</div>
+        <div class="box7" style="background-color: goldenrod;">7</div>
+        <div class="box8" style="background-color: lightcyan;">8</div>
+        <div class="box9" style="background-color: mediumaquamarine;">9</div>
+        <div class="box10" style="background-color: midnightblue;">10</div>
+        <div class="box11" style="background-color: aqua;">11</div>
+        <div class="box11" style="background-color: greenyellow;">12</div>
+        <div class="box11" style="background-color: lightpink;">13</div>
+    </div>
+</body>
+</html>

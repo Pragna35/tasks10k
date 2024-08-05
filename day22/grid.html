@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout using Grid container properties</title>
+    <style>
+        body{
+            margin: 30px;
+        }
+        .container{
+         /* background-color: lightblue; */
+         display: grid;
+         grid-template-columns: auto auto auto; 
+        gap: 10px;
+        }
+        .container>div{
+        background-color: lightcoral;
+        border: solid;
+        height: 400px;
+        background-size: 500px 500px;
+        background-repeat: no-repeat;
+        }
+        .item1{
+            background-image: url('https://img.freepik.com/free-photo/beautiful-floral-wallpaper_23-2150705857.jpg');
+            
+        }
+        .item2{
+            background-image: url('https://t3.ftcdn.net/jpg/05/54/02/68/360_F_554026892_UsZG4Tm3GPUV6fxzlpvV0qOOe9KKYvCj.jpg');
+        }
+        .item3{
+            background-image: url('https://c8.alamy.com/comp/KA2402/golden-morning-sun-rays-on-green-grass-in-autumn-beautiful-nature-KA2402.jpg');
+            
+        }
+        .item4{
+            background-image: url('https://cdn4.vectorstock.com/i/1000x1000/78/23/beautiful-abstract-background-with-flowers-vector-2087823.jpg');
+        }
+        .item5{
+            background-image: url('https://static.vecteezy.com/system/resources/previews/032/257/185/non_2x/wallpapers-for-the-beautiful-peacock-wallpaper-ai-generated-free-photo.jpg');
+
+        }
+        .item6{
+            background-image: url('https://www.shutterstock.com/image-photo/beautiful-collage-access-sea-ancient-260nw-1446857123.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        
+    </div>
+</body>
+</html>
